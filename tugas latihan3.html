@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tampilan HTML</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        .table-caption-bottom { caption-side: bottom; font-weight: bold; text-align: left; padding-top: 5px; }
+        dt { font-weight: bold; margin-top: 10px; }
+        dd { margin-left: 20px; }
+        .app-header { background-color: #007bff; color: white; padding: 10px; text-align: center; }
+        .app-header h1 { margin: 0; font-size: 1.5em; }
+        .app-header p { margin: 5px 0 0 0; font-size: 0.9em; }
+        .imagemap-text { font-size: 1.1em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="app-header">
+    <h1>Mahasiswa Sistem Informasi</h1>
+    <p>Jago IT • Suka Koding • Berkarakter 🌿</p>
+</div>
+
+<div class="container">
+
+    <h2 id="html-images">HTML Images</h2>
+    <p>Tag <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar + dijadikan tautan. Contohnya:</p>
+    <a href="https://www.w3schools.com/html/">
+        <img src="https://exampllee.vercel.app/assets/F01.jpg" alt="digunakan untuk menampilkan gambar + dijadikan tautan" width="200" height="150">
+    </a>
+
+    <p>Contoh gambar animasi (GIF):</p>
+    <img src="https://media.tenor.com/f3ZxKhvUproAAAAM/depressed.gif" alt="Contoh GIF" width="300" height="200">
+
+    <p>Dan berikut penerapan <code>&lt;picture&gt;</code> element:</p>
+    <picture>
+        <source srcset="kucing-besar.jpg" media="(min-width: 650px)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-q6MgXvloC6Lgvv-srXY7pe05iTOYFAYtEs75MQZQ4okHxxiZ7sasQw0&s=10" alt="Gambar Kucing" width="250" height="250">
+    </picture>
+    
+    <hr>
+
+    <h2 id="image map">Image Map</h2>
+    <p class="imagemap-text">
+        Kita bisa membuat gambar yang memiliki area klik berbeda-beda:
+    </p>
+
+    <img src="https://exampllee.vercel.app/assets/F16.jpg" alt="Laptop dan Cangkir Kopi" usemap="#workmap" width="350" height="235">
+
+    <map name="workmap">
+        <area shape="rect" coords="50,40,250,180" alt="Komputer" href="https://www.w3schools.com/html/computer.htm">
+        <area shape="circle" coords="300,180,30" alt="Cangkir Kopi" href="https://www.w3schools.com/html/coffee.htm">
+    </map>
+    <p>
+        ➡️ Coba klik bagian **komputer** atau **cangkir kopi** di gambar di atas!
+    </p>
+
+    <hr><h2 id="html-tables">HTML Tables</h2>
+    <p>Tabel digunakan untuk menampilkan data baris dan kolom:</p>
+    <!-- table section -->
+  <div>
+    <table style="border-collapse:collapse; width:100%">
+      <tr>
+        <th colspan="3" style="border:1px solid">Data Mahasiswa SI</th>
+            <tr>
+                <td>Nama</td>
+                <td>NIM</td>
+                <td>Minat</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Fathan</td>
+                <td>0118152090</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>Riyan</td>
+                <td>0119122091</td>
+                <td>UI/UX Design</td>
+            </tr>
+        </tbody>
+        <td colspan="3">Jumlah mahasiswa aktif: 2</td>
+    </table>
+      
+   
+
+    
+
+    <hr>
+
+    <h2 id="html-lists">HTML Lists</h2>
+    <p><strong>Unordered List (daftar tanpa urutan):</strong></p>
+    <ul>
+        <li>Analisis Sistem</li>
+        <li>Desain Database</li>
+        <li>Pemrograman Web</li>
+    </ul>
+
+    <p><strong>Ordered List (daftar berurutan):</strong></p>
+    <ol>
+        <li>Belajar HTML</li>
+        <li>Belajar CSS</li>
+        <li>Belajar JavaScript</li>
+    </ol>
+
+    <p><strong>Description List:</strong></p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Bahasa untuk membuat struktur web.</dd>
+        
+        <dt>CSS</dt>
+        <dd>Bahasa untuk memperindah tampilan web.</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Bahasa untuk membuat web menjadi interaktif.</dd>
+    </dl>
+    <!-- BONUS: MARQUEE -->
+  <h2>Bonus: Animasi Teks</h2>
+  <marquee behavior="alternate" scrollamount="6" bgcolor="#e1e1e1" width="80%">
+    <b>Alone</b>
+  </marquee>
+
+    
+</div>
+
+</body>
+</html>
